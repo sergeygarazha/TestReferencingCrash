@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 
+private var lock = NSLock()
 private var cancellables: Set<AnyCancellable> = []
 
 class ViewModel {
@@ -9,11 +10,13 @@ class ViewModel {
             DispatchQueue(label: "test", qos: .default)
             //DispatchQueue.main
                 .async {
-                    objc_sync_enter(cancellables)
-                        Just("Test").sink(receiveValue: { value in
-                            print(value)
-                        }).store(in: &cancellables)
-                    objc_sync_exit(cancellables)
+                    let cancellable = Just("Test").sink(receiveValue: { value in
+                        print(value)
+                    })
+
+                    lock.lock()
+                    cancellable.store(in: &cancellables)
+                    lock.unlock()
             }
         }
     }
