@@ -1,19 +1,17 @@
-//
-//  ContentView.swift
-//  TestReferencingCrash
-//
-//  Created by Sergey Garazha on 10.02.2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    let buttonAction: () -> Void
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Button(action: buttonAction) {
+                Text("Test")
+            }
         }
         .padding()
     }
@@ -21,6 +19,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(buttonAction: {})
     }
 }

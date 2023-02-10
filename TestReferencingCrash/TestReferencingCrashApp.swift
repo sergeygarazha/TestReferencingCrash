@@ -1,17 +1,14 @@
-//
-//  TestReferencingCrashApp.swift
-//  TestReferencingCrash
-//
-//  Created by Sergey Garazha on 10.02.2023.
-//
-
 import SwiftUI
+
+let viewModel = ViewModel()
 
 @main
 struct TestReferencingCrashApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView {
+                viewModel.test()
+            }
         }
     }
 }

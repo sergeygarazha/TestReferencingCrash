@@ -11,6 +11,7 @@
 		51F31A8C29965660001681D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F31A8B29965660001681D6 /* ContentView.swift */; };
 		51F31A8E29965662001681D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F31A8D29965662001681D6 /* Assets.xcassets */; };
 		51F31A9129965662001681D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F31A9029965662001681D6 /* Preview Assets.xcassets */; };
+		51F31A9829965724001681D6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F31A9729965724001681D6 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		51F31A8B29965660001681D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51F31A8D29965662001681D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51F31A9029965662001681D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		51F31A9729965724001681D6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				51F31A8929965660001681D6 /* TestReferencingCrashApp.swift */,
 				51F31A8B29965660001681D6 /* ContentView.swift */,
+				51F31A9729965724001681D6 /* ViewModel.swift */,
 				51F31A8D29965662001681D6 /* Assets.xcassets */,
 				51F31A8F29965662001681D6 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51F31A8C29965660001681D6 /* ContentView.swift in Sources */,
+				51F31A9829965724001681D6 /* ViewModel.swift in Sources */,
 				51F31A8A29965660001681D6 /* TestReferencingCrashApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
